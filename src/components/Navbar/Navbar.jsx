@@ -17,6 +17,7 @@ export const Navbar = () => {
             <LinksContainerStyled>
                 <HomeContainerStyled>
                     MIN 56 - CLASE  3.4 Livecoding: Landing Page | React JS
+                    Contenido exclusivo de Develop
                 </HomeContainerStyled>
             </LinksContainerStyled>
         </NavbarContainerStyled>
