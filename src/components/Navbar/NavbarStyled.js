@@ -1,48 +1,66 @@
 import styled from 'styled-components';
 
 export const NavbarContainerStyled = styled.div`
-    height: 100px;
+    height: 25vh;
     width: 100%;
     background-color: #18191a;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+`
 
-    & img {
-        background-color: blue;
-        border: 5px solid darkblue;
-        height: 50px;
-        width: 50px;
-    }
+export const ContainerCenter = styled.div`
+    width: 90%;
+    margin: auto;
+`
+
+export const LogoUserContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+`
+
+export const Logo = styled.img`    
+    background-color: blue;
+    border: 5px solid darkblue;
+    height: 50px;
+    width: 50px;
+`
+export const NameUser = styled.div`
+    color: red;
 `
 
 export const LinksContainerStyled = styled.div`
-    color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 40;
+    border: 2px solid black;
 `
-export const LinkContainerStyled = styled.div`
+export const LinkContainerStyled = styled.a`
     font-size: 1.2rem;
-    color: ${(props) => (props.home ? "#ff9d01" : "#ff9300")};
-    align-items: center;
+    color: ${(props) => (props.home ? "#ff9d01" : "#3C18DC")};
+`
+export const SearchBarContainer = styled.div`
+    border: 2px solid black;
+`
+export const InputSearch = styled.input`
+
+`
+export const ButtonSearch = styled.button`
+
 `
 
-export const UserContainerStyled = styled(LinkContainerStyled)`
-    display: flex;
-`
+// export const UserContainerStyled = styled(LinkContainerStyled)`
+//     display: flex;
+// `
 
-export const HomeContainerStyled = styled(LinkContainerStyled)`
-    display: flex;
-    @media (max-width: 768px){
-        display: none;
-    }
-`
-export const MenuContainerStyled = styled(LinkContainerStyled)`
-    display: none;
-    cursor: pointer;
-    @media (max-width: 768px){
-        display: flex;
-    }
-` 
+// export const HomeContainerStyled = styled(LinkContainerStyled)`
+//     @media (max-width: 768px){
+//         display: none;
+//     }
+// `
+// export const MenuContainerStyled = styled(LinkContainerStyled)`
+//     display: none;
+//     cursor: pointer;
+//     @media (max-width: 768px){
+//         display: flex;
+//     }
+// ` 
